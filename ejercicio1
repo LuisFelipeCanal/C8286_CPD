@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Función ejecutada por cada hilo
+function hilo_funcion {
+    local hilo_id=$1 
+    echo "Hilo $hilo_id ejecutándose"
+    sleep $(( (RANDOM % 5) + 1 ))
+    echo "Hilo $hilo_id finalizado"
+}
+
+# Número de hilos
+NUM_HILOS=5
+
+# Matriz para almacenar los ID de procesos en segundo plano
+PIDS=()
+
+# Iniciar hilos
+for ((i=0; i<NUM_HILOS; i++)); do
+    hilo_funcion $i &
+    PIDS+=($!)
+done
+
+# Esperar a que todos los hilos terminen
+for pid in "${PIDS[@]}"; do
+    wait $pid
+done
+
+echo "Todos los hilos completados"
+
