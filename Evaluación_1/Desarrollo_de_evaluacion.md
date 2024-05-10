@@ -6,24 +6,24 @@
 
 **Buscar procesos específicos por nombre:**
 
-![image.png](https://i.postimg.cc/bvhSY00f/image.png)
+![image.png]()
 
 
 **Mostrar procesos en un árbol jerárquico (útil para ver relaciones padre-hijo enprocesos concurrentes):**
 
-[![image.png](https://i.postimg.cc/VN91qpS5/image.png)
+[![image.png]()
 
 
 **Mostrar procesos de un usuario específico:**
 
-![image.png](https://i.postimg.cc/8PnnY484/image.png)
+![image.png]()
 
 
 **Escribe un script para verificar y reiniciar automáticamente un proceso si no está corriendo.**
 
 
-![image.png](https://i.postimg.cc/Sj0YXH2V/image.png)
-![image.png](https://i.postimg.cc/BvtFV50T/image.png)
+![image.png]()
+![image.png]()
 
 
 
@@ -31,33 +31,33 @@
 
 **Filtrar  errores  específicos en  logs de  aplicaciones  paralelas**:
 
-![image.png](https://i.postimg.cc/BQxRjDRB/image.png)
+![image.png]()
 
 **Monitorizar la creación de procesos no autorizados** :
 
-![image.png](https://i.postimg.cc/K85zD13n/image.png)
+![image.png]()
 
-![image.png](https://i.postimg.cc/768WPZXW/image.png)
+![image.png]()
 
 
 **Contar el  número de  ocurriencias de  condiciones de  carrera  registradas** :
 
-![image.png](https://i.postimg.cc/gk8qdH1m/image.png)
+![image.png]()
 
 
 **Extraer IPs que han accedido  concurrentemente a un recursos**:
 
-![image.png](https://i.postimg.cc/Dz8RxNY7/image.png)
+![image.png]()
 
 
 **Automatizar la alerta de sobrecarga en un servicio distribuida**
 
-![image.png](https://i.postimg.cc/Wb0ZkbNv/image.png)
+![image.png]()
 
 
 **Monitorear errores de conexión en aplicaciones concurrentes** :
 
-![image.png](https://i.postimg.cc/QdLq2ytX/image.png)
+![image.png]()
 
 
 **Validar la correcta sincronización en operaciones distribuidas**
@@ -66,7 +66,7 @@
 
 **Detectar y alertar sobre ataques de fuerza bruta SSH**
 
-![image.png](https://i.postimg.cc/wBMkKyJp/image.png)
+![image.png]()
 
 
 
@@ -75,40 +75,40 @@
 `watch "ps aux | grep '[a]pache2' | awk '{print \$1, \$2, \$3, \$4, \$11}"`
 
 
-![image.png](https://i.postimg.cc/nVWK7c6R/image.png)
+![image.png]()
 
 `cat /var/log/myapp.log | grep "ERROR" | awk '{print $NF}' | sort | uniq -c | sort -nr`
 
 
-![image.png](https://i.postimg.cc/MKN8hRg7/image.png)
+![image.png]()
 
 `systemctl --failed | grep "loaded units listed" || systemctl restart $(awk '{print $1}')`
 
 
-![image.png](https://i.postimg.cc/9FbrHxC6/image.png)
+![image.png]()
 
 
 `ps -eo pid,ppid,%cpu,cmd --sort=-%cpu | awk '$3 > 80 {print "Alto uso de CPU: ", $1}' | mail -s "Alerta CPU" [admin@example.com`](mailto:admin@example.com)
 
 
-![image.png](https://i.postimg.cc/QdV54L14/image.png)
+![image.png]()
 
 `ls /var/log/*.log | xargs -n 1 -P 5 -I {} ssh nodo_remoto "grep 'ERROR' {} > errores_{}.txt"`
 
 
-![image.png](https://i.postimg.cc/Hx7jXdG5/image.png)
+![image.png]()
 
 
 `echo "8.8.8.8 www.example.com" | xargs -n 1 ping -c 1 | grep "bytes from" || echo "$(date)Fallo de ping" >> fallos_ping.txt`
 
 
-![image.png](https://i.postimg.cc/yNsjJvkX/image.png)
+![image.png]()
 
 
 `ps -eo user,%cpu,%mem,cmd | awk '/httpd/ {cpu+=$2; mem+=$3; count++} END {print"Apache - CPU:", cpu/count, "Mem:", mem/count}'`
 
 
-![image.png](https://i.postimg.cc/02ZXYg1X/image.png)
+![image.png]()
 
 
 
