@@ -2,7 +2,7 @@
 # Desarrollo Evaluacion 1!
 
  **Listar todos los procesos con detalles completos**
- ![image.png](https://i.postimg.cc/W1RPx5jj/image.png)
+ ![image.png])
 
 **Buscar procesos específicos por nombre:**
 
