@@ -1,8 +1,8 @@
 -Desarrollo Evaluacion 1
 
  **Listar todos los procesos con detalles completos**
-  [image.png](![imagen](https://github.com/LuisFelipeCanal/C8286_CPD/assets/89529586/dab76e8c-05c1-47f3-ace6-129a46d6092e)
-)
+  [image.png](https://github.com/LuisFelipeCanal/C8286_CPD/assets/89529586/dab76e8c-05c1-47f3-ace6-129a46d6092e)
+
 **Buscar procesos específicos por nombre:**
   [image.png]()
 **Mostrar procesos en un árbol jerárquico (útil para ver relaciones padre-hijo enprocesos concurrentes):**
