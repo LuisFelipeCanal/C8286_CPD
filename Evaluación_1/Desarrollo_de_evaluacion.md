@@ -153,14 +153,14 @@
 
 El comando ps aux muestra información sobre los procesos del sistema, y awk '{print $1, $2, $3, $4, $11}' se encarga de filtrar y mostrar solo ciertos campos de esa información, incluyendo el usuario, el PID, el %CPU, el %MEM y el nombre del comando de los primeros 10 procesos.
 
-![image.png](https://i.postimg.cc/RZGwN9fG/image.png)
+![image.png]()
 
 
 1.  El primer script **tail -f /var/log/app.log | grep "ERROR" | awk '{print $1, $2, $NF}'** muestra en tiempo real las líneas del archivo **/var/log/app.log** que contienen la palabra "ERROR", y luego imprime el primer y segundo campo de esas líneas junto con el último campo.
 2.  El resultado de aplicar este script depende del contenido del archivo **/var/log/app.log**. Si hay líneas que contienen la palabra "ERROR", entonces esas líneas junto con sus campos se mostrarán en la salida.
 3.  El segundo script **ps -eo user,pid,pcpu,pmem,cmd | grep apache2 | awk '$3 > 50.0 || $4 > 50.0 {print "Alto recurso: ", $0}'** muestra información sobre los procesos relacionados con "apache2" cuyo uso de CPU (**pcpu**) o uso de memoria (**pmem**) sea mayor al 50%. Si encuentra alguno, imprime un mensaje indicando "Alto recurso" seguido de toda la línea de información del proceso.
 
-![image.png](https://i.postimg.cc/vT3G5PzR/image.png)
+![image.png]()
 
 
 
@@ -169,42 +169,42 @@ El comando ps aux muestra información sobre los procesos del sistema, y awk '{p
 `ps  -eo pid,pcpu,pmem,cmd | awk '$2 > 10.0 || $3 > 10.0'`
 
 
-![image.png](https://i.postimg.cc/gJLMVrHG/image.png)
+![image.png]()
 
 
 `awk '{print $0 >> ("output-" $4 ".log")}'  /var/log/syslog`
 
 
-![image.png](https://i.postimg.cc/pT92KQSy/image.png)
+![image.png]()
 
 
 `grep "Failed password" /var/log/auth.log | awk '{print $(NF-3)}' | sort | uniq  -c | sort  -nr`
 
 
-![image.png](https://i.postimg.cc/rw3MGnBW/image.png)
+![image.png]()
 
 
 `find .  -type f  -name "*.py"  -exec ls  -l {} + | awk '{sum += $5} END {print "Espacio totalusado por archivos .py: ", sum}'`
 
 
-![image.png](https://i.postimg.cc/02KtMV0h/image.png)
+![image.png]()
 
 
 `ps  -eo state | awk '/D/ {d++} /R/ {r++} END {print "Espera (D):", d, "-  Ejecución (R):",r}`
 
 
-![image.png](https://i.postimg.cc/65Q8YPm1/image.png)
+![image.png]()
 
 
 
 `awk '/SwapTotal/ {total=$2} /SwapFree/ {free=$2} END {if ((total-free)/total*100 >20.0) print "Alerta: Uso excesivo de swap"}' /proc/meminfo`
 
 
-![image.png](https://i.postimg.cc/FzywSGjy/image.png)
+![image.png]()
 
 
 
 `s  -l | awk '!/^total/ && !/^d/ {sum += $5} END {print "Uso total de disco (sinsubdirectorios):", sum}`
 
 
-![image.png](https://i.postimg.cc/FzywSGjy/image.png)
+![image.png]()
