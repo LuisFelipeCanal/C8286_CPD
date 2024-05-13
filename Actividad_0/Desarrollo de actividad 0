@@ -2,7 +2,7 @@
 # Desarrollo Actividad 0!
 
 `$ docker container run rancher/cowsay Hello`
-[![Captura-desde-2024-05-13-03-32-44.png](https://i.postimg.cc/Yq98L2s9/Captura-desde-2024-05-13-03-32-44.png)](https://postimg.cc/LhcjrSRK)
+![image.png][Captura-desde-2024-05-13-03-32-44.png](https://i.postimg.cc/Yq98L2s9/Captura-desde-2024-05-13-03-32-44.png)](https://postimg.cc/LhcjrSRK)
 
 
 **Probando minikube y kubectl**
