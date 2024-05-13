@@ -2,118 +2,52 @@
 # Desarrollo Actividad 0!
 
 `$ docker container run rancher/cowsay Hello`
-
-![image.png]()
+[![Captura-desde-2024-05-13-03-32-44.png](https://i.postimg.cc/Yq98L2s9/Captura-desde-2024-05-13-03-32-44.png)](https://postimg.cc/LhcjrSRK)
 
 
 **Probando minikube y kubectl**
 
-![image.png](9
 
-![image.png]()
-
-![image.png]()
 
 ## Preguntas
-
-1.  Un contenedor es como una caja de herramientas portátil que contiene todo lo que una aplicación necesita para funcionar, permitiéndole trabajar de la misma manera, sin importar dónde se lleve.
+Con base en lo que se cubrió en esta actividad, responda las siguientes preguntas:
+1. En tus propias palabras, usando analogías, explica qué es un contenedor.
+2. ¿Por qué se considera que los contenedores cambian las reglas del juego en IT?
+Mencione tres o cuatro razones.
+3. ¿Qué significa cuando afirmamos que, si un contenedor se ejecuta en una
+plataforma determinada, entonces se ejecutará en cualquier lugar? Mencione dos o
+tres razones por las que esto es cierto.
+4. ¿Es verdadera o falsa la siguiente afirmación: los contenedores Docker solo son
+útiles para aplicaciones modernas y totalmente nuevas basadas en microservicios?
+Por favor justifique su respuesta.
+5. ¿Por qué nos importaría instalar y usar un administrador de paquetes en nuestra
+computadora local?
+6. ¿Con Docker Desktop, puede desarrollar y ejecutar contenedores de Linux?
+7. ¿Por qué son esenciales buenas habilidades de programación (como Bash o
+PowerShell) para el uso productivo de los contenedores?
+8. Nombra tres o cuatro distribuciones de Linux en las que Docker esté certificado para
+ejecutarse.
+9. Instalaste minikube en tu sistema. ¿Para qué tipo de tareas utilizarás esta
+herramienta?
+1.  Un contenedor es como bolso de herramientas que ayuda como aplicación brindando empaquetados de código para que las apps se puedan ejecutar de una forma más viable y en donde sea.
     
-2.  Los contenedores cambian el juego al proporcionar portabilidad, eficiencia en el uso de recursos, aislamiento y rapidez de despliegue.
+2.  Porque puede encapsular todas las dependencias de una app en un solo paquete,Nos facilita como arquitecturas basadas en microservicios al permitir que cada componente de la aplicación se ejecute en su propio contenedor
     
-3.  La afirmación de que "si un contenedor funciona en un lugar, funciona en cualquier lugar" se basa en la consistencia de ejecución y en la independencia de la infraestructura que proporcionan los contenedores.
+3.  significa que hace que estos paquetes son estables y su independencia del mismo al ejecutar otros programas o contendores
     
-4.  Falso. Los contenedores Docker son útiles tanto para aplicaciones heredadas como nuevas, ya que facilitan la gestión de dependencias y mejoran la portabilidad y la consistencia.
+4.  Falso. Los contenedores Docker son útiles tanto para aplicaciones antiguas y las modernas, ya que al no ser dependentes mejoran su efectividad y portabilidad.
     
-5.  Un administrador de paquetes es crucial para instalar y gestionar software de manera eficiente y para mantener la consistencia entre diferentes entornos de desarrollo y producción.
+5.  Nos importaria instalar un administrador de paquetes por el motivo de poder instalar y gestionar nuestro software y poder llegar desarrollar un entorno de un developer activo.
     
-6.  Sí, Docker Desktop permite desarrollar y ejecutar contenedores de Linux en diferentes sistemas operativos, incluyendo Windows y Mac.
+6.  Sí, Docker Desktop permite ejecutar y poder desarrollar contenedores de docker se puede instalar en cualquiere SO.
     
-7.  Buenas habilidades de programación son esenciales para automatizar y gestionar contenedores y servicios, para la resolución de problemas y la personalización de entornos.
+7. Las habilidades de programación son esenciales para automatizar contenedores y servicios, para desarrollar una amplia gama contenedores y rendirlos a su capacidad máxima.
     
-8.  Docker está certificado para ejecutarse en Ubuntu, CentOS, RHEL y SLES.
+8.  Docker tiene certificado para ejecutarse CentOS ,Debian ,Fedora,Raspberry Pi OS (32-bit),RHEL (s390x),SLES,Ubuntu,Binarios
     
-9.  Minikube se utiliza para pruebas, desarrollo y aprendizaje de Kubernetes en un entorno local simulando un clúster de Kubernetes.
+9.  Minikube se utilizara para desarrollo de pruebas y aprendizaje de Kubernetes en un entorno local simulando un clúster de Kubernetes.
 
 
-## DESARROLLO ACTIVIDAD 2!
-
-**Aplicaciones docker**
-
-![image.png]()
-
-![image.png]()
-
-**CREACION IMAGENES DOCKER**
-
-![image.png]()
-
-![image.png]()
-
-![image.png]()
-
-
-## EJERCICIO
-
-Parte 1: Exploración y Ejecución Loca
-
-![image.png]()
-Parte 2: Introducción a Docker
-
-`FROM ubuntu:20.04 
-RUN apt-get update &&  
-\apt-get install  
--y python COPY hola.py 
-.ENTRYPOINT ["python", "hola.py"]´`
-
-
-Parte 3:  Construcción de la Imagen Docker:
-
-![image.png]()
-![image.png]()
-
-Parte  4: Manipulación de la  red Docker
-
-![image.png]()
-![image.png]()
-
-![image.png]()
-
-[![image.png]()
-
-![image.png]()
-
-## Ejercicios1. 
-
- **Ejecute CouchDB como contenedor Docker y publique su puerto de la siguiente manera: Puede usar el comando de búsqueda de Docker para encontrar la imagen de CouchDB.**
-
-![image.png]()
-
-
-![image.png]()
-
-![image.png]()
-
-![image.png]()
-
-**Cree una imagen de Docker con un  servicio REST, respondiendo Hola Mundo alocalhost:8080/hello. Utilice cualquier lenguaje y frameworks que prefiera.**
-
-![image.png]()
-![image.png]()
-
-**ALPINE**
-
-![image.png]()
-
-![image.png]()
-
-![image.png]()
-
-**Cree un Dockerfile que utilice varios pasos para crear una imagen de una aplicación de algoritmos (el que desees de tamaño mínimo), escrita en C, Go, Java, C++.**
-
-![image.png]()
-**NUEVO DOCKERFILE**
-
-![image.png]()
 
 ![image.png]()
 
