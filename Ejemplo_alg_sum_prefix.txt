@@ -1,0 +1,9 @@
+Este ejemplo en C implementa el algoritmo de la suma prefix usando comunicaciones no
+bloqueantes (MPI_Isend y MPI_Irecv) y grupos.
+Explicación:
+    Comunicación asincrónica: Utiliza MPI_Isend y MPI_Irecv para enviar y recibir datos de
+    forma no bloqueante.
+    Suma Prefix: Después de la comunicación, cada proceso calcula la suma prefix de los	
+    datos recibidos.
+
+
